@@ -4,65 +4,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Listing Page</title>
+    <title>Metta Muse</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="logo">LOGO COMPANY</div>
+        <div class="logo">LOGO</div>
+        <div class="header-icons">
+            <span>contrast</span>
+            <span>favorite</span>
+            <span>bag</span>
+            <span>lock</span>
+            <span>ENG</span>
+        </div>
         <nav>
             <ul>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Sales</a></li>
-                <li><a href="#">Stores</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#">SKILLS</a></li>
+                <li><a href="#">STORIES</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT US</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="filters">
-            <h2>Filters</h2>
-            <ul>
-                <li><a href="#">Category</a></li>
-                <li><a href="#">Color</a></li>
-                <li><a href="#">Size</a></li>
-                <li><a href="#">Price</a></li>
-                <!-- Add more filter options as needed -->
-            </ul>
-            <button>Clear All</button>
-        </section>
+    <section class="hero">
+        <h1>DISCOVER OUR PRODUCTS</h1>
+        <p>welcome to our website.</p>
+    </section>
 
-        <section class="product-listing">
-            <h2>Discover Our Products</h2>
-            <div class="products">
-                <div class="product">
-                    <img src="C:\Users\chand\Downloads\WhatsApp Image 2024-08-28 at 3.19.38 PM.jpeg" alt="Product 1">
-                    <h3>Smart needs</h3>
-                </div>
-                <div class="product">
-                    <img src="C:\Users\chand\Downloads\WhatsApp Image 2024-08-28 at 3.19.37 PM.jpeg" alt="Product 2">
-                    <h3>CHAIRS</h3>
-                </div>
-                <!-- Repeat for more products -->
-            </div>
-        </section>
-    </main>
+    <section class="filters">
+        <div class="filter-header">
+            <p>3425 Items</p>
+            <button>arrowleft HIDE FILTER</button>
+        </div>
+        <div class="filter-options">
+            <label><input type="checkbox" checked> Recommended</label>
+            <label><input type="checkbox" checked> Customizable</label>
+            <label><input type="checkbox" checked> Men</label>
+            <label><input type="checkbox" checked> Women</label>
+            <label><input type="checkbox" checked> Baby & Kids</label>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="product">
+            <img src="file:///C:/Users/chand/Downloads/dolls.webp" alt="Dolls">
+            <img src="file:///C:/Users/chand/Downloads/caps.webp" alt="caps">
+            <img src="file:///C:/Users/chand/Downloads/bag.webp" alt="Bags">
+            <img src="file:///C:/Users/chand/Downloads/locate.webp" alt="locates">
+            <h3>kids zone</h3>
+            <p>Sign in or Create an account to see pricing</p>
+        </div>
+        <!-- Repeat the above block for each product -->
+    </section>
 
     <footer>
-        <div class="subscribe">
-            <h3>Be the first to know</h3>
-            <input type="email" placeholder="Enter your email">
-            <button>Subscribe</button>
+        <div class="newsletter">
+            <p>Be the first to know</p>
+            <form action="#">
+                <input type="email" placeholder="Enter your e-mail...">
+                <button type="submit">Subscribe</button>
+            </form>
         </div>
         <div class="footer-links">
-            <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-            </ul>
+            <div>
+                <h4>mettā muse</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Stories</a></li>
+                    <li><a href="#">Artisans</a></li>
+                    <li><a href="#">Boutiques</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Orders & Shipping</a></li>
+                    <li><a href="#">Join/Login as a Seller</a></li>
+                    <li><a href="#">Payment & Pricing</a></li>
+                    <li><a href="#">Return & Refunds</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-contact">
+            <p>CONTACT US</p>
+            <p>+44 221 133 5360</p>
+            <p><a href="mailto:customercare@mettamuse.com">customercare@mettamuse.com</a></p>
         </div>
     </footer>
 </body>
@@ -70,26 +102,21 @@
 
 
 
-//css 
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+//css
 
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     color: #333;
-    background-color: #f4f4f4;
 }
 
 header {
-    background-color: #fff;
-    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
     border-bottom: 1px solid #ddd;
 }
 
@@ -98,78 +125,66 @@ header {
     font-weight: bold;
 }
 
+.header-icons span {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
 nav ul {
-    list-style: none;
     display: flex;
-    gap: 20px;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #333;
-    font-size: 16px;
 }
 
-main {
-    display: flex;
-    padding: 20px;
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f1f1f1;
 }
 
 .filters {
-    width: 20%;
-    background-color: #fff;
     padding: 20px;
-    border-right: 1px solid #ddd;
+    background-color: #f8f8f8;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
 }
 
-.filters h2 {
-    margin-bottom: 15px;
-    font-size: 20px;
-}
-
-.filters ul {
-    list-style: none;
-    margin-bottom: 15px;
-}
-
-.filters ul li {
-    margin-bottom: 10px;
-}
-
-.filters ul li a {
-    text-decoration: none;
-    color: #333;
-}
-
-.filters button {
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-.product-listing {
-    width: 80%;
-    padding-left: 20px;
-}
-
-.product-listing h2 {
+.filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 20px;
-    font-size: 24px;
+}
+
+.filter-options label {
+    display: block;
+    margin: 5px 0;
 }
 
 .products {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
+    padding: 20px;
 }
 
 .product {
+    flex: 1 1 calc(25% - 40px);
     background-color: #fff;
     padding: 10px;
-    border: 1px solid #ddd;
     text-align: center;
+    border: 1px solid #ddd;
 }
 
 .product img {
@@ -178,8 +193,11 @@ main {
 }
 
 .product h3 {
-    margin-top: 10px;
-    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product p {
+    margin: 10px 0;
 }
 
 footer {
@@ -187,46 +205,58 @@ footer {
     color: #fff;
     padding: 20px;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-footer .subscribe {
-    flex: 1;
+.newsletter {
+    flex: 1 100%;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-footer .subscribe h3 {
-    margin-bottom: 10px;
-    font-size: 18px;
-}
-
-footer .subscribe input {
-    width: 70%;
+.newsletter input[type="email"] {
     padding: 10px;
     margin-right: 10px;
+    border: none;
+    border-radius: 5px;
 }
 
-footer .subscribe button {
-    padding: 10px;
-    background-color: #555;
-    color: #fff;
+.newsletter button {
+    padding: 10px 20px;
+    background-color: #007BFF;
     border: none;
+    color: #fff;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-footer .footer-links {
+.footer-links {
     flex: 1;
-    text-align: right;
-}
-
-footer .footer-links ul {
-    list-style: none;
     display: flex;
-    justify-content: flex-end;
-    gap: 20px;
+    justify-content: space-around;
+    margin-bottom: 20px;
 }
 
-footer .footer-links ul li a {
+.footer-links div {
+    flex: 1;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
     text-decoration: none;
     color: #fff;
+}
+
+.footer-contact {
+    flex: 1 100%;
+    text-align: center;
 }
